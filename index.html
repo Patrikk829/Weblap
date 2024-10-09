@@ -3,34 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kedvenc Helyszínem</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Magyarország Látványosságai</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .hero {
+            background-image: url('https://www.heviz.hu/hu/hevizi-to/hevizi-tofurdo/tofurdo-nyitva-tartas-arlista');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            position: relative;
+        }
+        .hero h1 {
+            color: white;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+        .recommendations {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .recommendation {
+            flex: 1 1 calc(33.333% - 20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .recommendation img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+        }
+        .back-to-top {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            background-color: #555;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Főoldal</a></li>
-                <li><a href="gallery.html">Galéria</a></li>
-                <li><a href="contact.html">Kapcsolat</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h1>Üdvözöllek a Kedvenc Helyszínemen!</h1>
-            <p>Ez a helyszín különleges számomra, mert gyönyörű tájakkal és gazdag történelemmel rendelkezik. Érdemes meglátogatni, mert rengeteg látnivaló és program vár itt.</p>
-        </section>
-        <section class="attractions">
-            <h2>Látnivalók</h2>
-            <ul>
-                <li>Gyönyörű parkok</li>
-                <li>Történelmi épületek</li>
-                <li>Múzeumok</li>
-                <li>Helyi éttermek</li>
-                <li>Kulturális események</li>
-            </ul>
-        </section>
-    </main>
+    <nav>
+        <a href="#">Főoldal</a>
+        <a href="#">Galéria</a>
+        <a href="#">Kapcsolat</a>
+    </nav>
+    <div class="hero">
+        <h1>Hévízi Tófürdő</h1>
+    </div>
+    <div class="container">
+        <h2>Magyarország Látványosságai</h2>
+        <p>A Hévízi Tófürdő a világ legnagyobb biológiailag aktív, természetes termáltava. A tó gyógyító erejű, 4,4 hektár nagyságú, 38 méter forrásmélységű tavat ásványi anyagokban gazdag források táplálják, amelyek bőséges vízhozmának köszönhetően a víz háromnaponta teljesen kicserélődik.</p>
+        <div class="recommendations">
+            <div class="recommendation">
+                <img src="https://cdn.pixabay.com/photo/2016/10/21/14/50/szechenyi-chain-bridge-1758196_960_720.jpg 1x, https://cdn.pixabay.com/photo/2016/10/21/14/50/szechenyi-chain-bridge-1758196_1280.jpg 2x" alt="Budapest">
+                <h3>Budapest</h3>
+                <p>Fedezd fel Budapest lenyűgöző építészetét és gazdag történelmét.</p>
+            </div>
+            <div class="recommendation">
+                <img src="https://example.com/balaton.jpg" alt="Balaton">
+                <h3>Balaton</h3>
+                <p>A Balaton, Közép-Európa legnagyobb tava, tökéletes hely a pihenésre és a vízi sportokra.</p>
+            </div>
+            <div class="recommendation">
+                <img src="https://example.com/eger.jpg" alt="Eger">
+                <h3>Eger</h3>
+                <p>Ismerd meg Eger történelmi várát és híres borvidékét.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Magyarország Látványosságai</p>
+        <a href="#" class="back-to-top">Vissza a tetejére</a>
+    </footer>
 </body>
 </html>
