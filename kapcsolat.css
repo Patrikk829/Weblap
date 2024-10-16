@@ -13,17 +13,6 @@ body {
     height: 100vh;
     color: #333;
 }
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
 
 .contact-container {
     background-color: #fff;
