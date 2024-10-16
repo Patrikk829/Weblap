@@ -87,7 +87,8 @@ td:first-child
 {
     background-color: rgb(255, 255, 255, 0.85);
 }
-.h1
+h1
 {
  text-align: center;
+text-size: 15px
 }
