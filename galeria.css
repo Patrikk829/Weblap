@@ -1,3 +1,14 @@
+nav {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -10,17 +21,26 @@ header, footer {
     text-align: center;
     padding: 1em 0;
 }
-.gallery {
+.galleria {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
 }
-.gallery img {
+.galleria img {
     margin: 10px;
     border: 2px solid #ddd;
     border-radius: 4px;
-    width: 300px;
-    height: 200px;
+    width: 700px;
+    height: 350px;
     object-fit: cover;
+}
+.back-to-top {
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
 }
