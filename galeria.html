@@ -28,9 +28,31 @@
         <img src="képek/Aggteleki cseppkőbarlang.jpg" alt="Aggteleki cseppkőbarlang" title="Aggteleki cseppkőbarlang">
         <img src="képek/Szeged.jpeg" alt="Szeged" title="Szeged">
     </div>
-    <div>
-    <a href="#" class="vissza">Vissza a tetejére</a>
-    </div>
+    <script>
+let gomb = document.getElementById("gomb");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    gomb.style.display = "block";
+  } else {
+    gomb.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+document.querySelector('.thumbnail').addEventListener('click', function() {
+    document.querySelector('.lightbox').style.display = 'flex';
+});
+
+document.querySelector('.close').addEventListener('click', function() {
+    document.querySelector('.lightbox').style.display = 'none';
+});
+
+</script>
     <footer>
         <p>© Copyright Horváth Lívia</p>
     </footer>
